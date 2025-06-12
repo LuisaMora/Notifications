@@ -1,0 +1,11 @@
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  data:
+    mongodb:
+      database: notifications_db
+      uri: mongodb://localhost:27017/notifications_db
+  springdoc:
+    swagger-ui:
+      path: /swagger-ui.html
